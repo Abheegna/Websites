@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: lightblue;
+            color: rgb(40, 38, 38);
+        }
+        #bgvideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100vw;
+            min-height: 100vh;
+            object-fit: cover;
+            z-index: -2;
+            opacity: 0.9;
+        }
+        header{
+            background-color: rgb(13, 47, 47);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header a{
+            color: azure;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* .menu-section{
+            padding: 40px 20px;
+        }
+        .menu-section h2{
+            font-size: 20px;
+            margin: 20px 0;
+            display: block;
+        } */
+        .menu-section {
+            padding: 40px 20px;
+            font-size: 20px;
+            margin: 20px 0;
+            display: inline;
+       }
+
+        .menu-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(220px, 1fr));
+            gap: 50px;
+            margin-top: 20px;
+        }
+        .menu-item{
+            background-color: rgb(153, 204, 204);
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 30x 60px rgba(0, 0, 0, 1);
+            transition: transform 0.2 ease; 
+        }
+        .menu-item:hover{
+            transition: transform 0.3s ease;
+            transform: scale(1.05);
+            text-decoration: underline;
+
+        }
+        .menu-item h3{
+            font-size: x-large;
+        }
+        footer{
+            background-color: rgb(13, 47, 47);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .menu-item img{
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+    <link rel="shortcut icon" href="cart-icon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce</title>
+</head>
+<body>
+    <video autoplay muted loop id="bgvideo">
+        <source src="bgvideo.mp4" type="video/mp4">
+    </video>
+    <header>
+        <h1>Welcome to L-Mart</h1>
+        <p>All your needs in one place</p>
+        <nav>
+           <a href="#">Items</a>
+           <a href="#">Contact</a>
+           <a href="#">Services</a>
+        </nav>
+    </header>
+    <div class="menu-section">
+        <h2>Grocery</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <a href="cake.html"><img src="cake" alt=""></a>
+                <h3>Cakes</h3>
+                <span>$20.0</span>
+            </div>
+            <div class="menu-item">
+                <a href="chocolates.html"><img src="chocolates.jpg" alt=""></a>
+                <h3>Chocolates</h3>
+                <span>$5.0</span>
+            </div>
+            <div class="menu-item">
+                <a href="sweets.html"><img src="sweets" alt=""></a>
+                <h3>Sweets</h3>
+                <span>$10.0</span>
+            </div>
+        </div>
+        <h2>Milk Products</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <a href="milk.html"><img src="mil" alt=""></a>
+                <h3>Milk</h3>
+                <span>$5.0</span>
+            </div>
+            <div class="menu-item">
+                <a href="cheese.html"><img src="cheese" alt=""></a>
+                <h3>Cheese</h3>
+                <span>$20.0</span>
+            </div>
+            <div class="menu-item">
+                <a href="paneer.html"><img src="paneer" alt=""></a>
+                <h3>Paneer</h3>
+                <span>$25.0</span>
+            </div>
+        </div>
+        <h2>Sports Wear</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <a href="sportwear.html"><img src="sports wear" alt=""></a>
+                <h3>Clothes</h3>
+                <span>$50.0</span>
+            </div>
+            <div class="menu-item">
+                <a href="shoes.html"><img src="shoe" alt=""></a>
+                <h3>Shoes</h3>
+                <span>$30.0</span>
+            </div>
+            <div class="menu-item">
+                <a href="socks.html"><img src="socks" alt=""></a>
+                <h3>Socks</h3>
+                <span>$5.0</span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 A-Mart Shopping | More</p>
+        <p>Follow us on <a href="www.lmart.com">www.amart.com</a></p>
+    </footer>
+</body>
+</html>

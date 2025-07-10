@@ -1,0 +1,37 @@
+body{
+    background-color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+.navbar{
+    background-color:#012718;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+.navbar a:hover {
+    color: #555;
+    background-color: white;
+}
+.navbar li {
+    display: inline;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.myworks {
+    text-align: center;
+}
+.foot{
+    padding: 10px;
+}
+footer {
+    color: white;
+    text-align: center;
+    background-color: #012718;
+}
